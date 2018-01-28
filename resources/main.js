@@ -28,7 +28,6 @@ svg.append('text')
 		.attr('x', 5)
 		.attr('y', 29);
 
-
 //retrieve the data from somewhere, make error checks, then use it to finish setting up scales before making the graph
 d3.json('resources/countries.geo.json', function(error,data){ //paths from script are from the displayed page
 	if(error)console.log(error);//super important. display error if found!!
@@ -63,7 +62,7 @@ function fire(){
 		else if (mass > 1000000)//huge cutoff
 			return 16;
 		else
-			return massToRadiusMain(mass);//the rest can be scaled
+			return massToRadiusMain(mass);//the rest can be scaled linearly
 	}
 	//make scales
 	massToRadiusMain = d3.scaleLinear()
