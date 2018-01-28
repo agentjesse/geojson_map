@@ -2,7 +2,6 @@ html{
   font-size: 16px;
 }
 body {
-  /* always set a minimum width so ios will not cut out stuff */
   background-color: rgb(223, 228, 252);
   margin: 0.1rem 0 0 0;
   display: flex;
